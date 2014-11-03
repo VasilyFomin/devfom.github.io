@@ -15,7 +15,7 @@ skype: hcontrol.c:326: _snd_hctl_find_elem: Assertion `hctl failed.
 Aborted
 {% endhighlight %}
 
-Все дело в том что Microsoft по прежнему забывает прописывать корректные зависимости для 64-х битного пакета. На Debian-based системе лечится с помощью следующей команды:
+Все дело в том, что Microsoft по прежнему забывает прописывать корректные зависимости для 64-х битного пакета. На Debian-based системе лечится с помощью следующей команды:
 
 {% highlight bash %}
 sudo apt-get install libasound2-plugings:i386
