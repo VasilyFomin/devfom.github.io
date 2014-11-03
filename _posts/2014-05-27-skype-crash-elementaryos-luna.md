@@ -1,8 +1,5 @@
 ---
-layout:     post
-title:      Skype падает на ElementaryOS Luna
-date:       2013-10-15 20:00:00
-summary:	Как починить падение скайпа на ElementaryOS Luna.
+published: false
 ---
 
 После установки последней версии [elementaryOS](http://elementaryos.org/) скайп категорически отказывался принимать, или совершать, любые звонки.
