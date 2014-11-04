@@ -1,8 +1,8 @@
 # Site settings
-title:       TBD
+title:       Васины записки
 email:       vasili.fomin@gmail.com
 author:      Vasiliy Fomin
-description: "Персональные конспекты"
+description: "Персональные записки Фомина Василия Александровича, на околопрограммисткие темы."
 baseurl:     ""
 url:         "http://devfom.github.io"
 
@@ -23,6 +23,9 @@ linkedin_username:
 bitcoin_url:
 paypal_url:
 flattr_button:
+
+# Disqus Comments
+disqus_short_name: devfom
 
 # Build settings
 markdown:     kramdown
