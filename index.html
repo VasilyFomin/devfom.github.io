@@ -1,20 +1,39 @@
 ---
 layout: default
 ---
+<div id="home" class="page-content wc-container">
+	<div class="posts">
+  		{% for post in site.posts limit:10 %}
+  			<div class="post">
+    			<h3 class="post-title">
+			      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+			        {{ post.title }}
+			      </a>
+    			</h3>
 
-<div class="home">
-
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
-        </a>
-      </div>
-    {% endfor %}
-  </div>
-
-  {% include pagination.html %}
+          <p class="post-meta">
+            {% if (post.categories.size > 0 %}
+            <span class="categories">
+            {{ post.categories | array_to_sentence_string }}
+            </span> |
+            {% endif %}
+            <span class="post-date">
+            {{ post.date | date: "%b %-d, %Y" }} 
+            </span>
+          </p>          
+    			    			
+  				<p>
+	  				{{ post.excerpt }}	
+  				</p>
+  				<p>
+  					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
+  						Read More
+					</a>
+  				</p>
+  			</div>
+  		{% endfor %}
+	</div>
+	<div class="post-footer">
+		<div class="column-full"><a href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}">Blog archive</a></div>
+	</div>
 </div>

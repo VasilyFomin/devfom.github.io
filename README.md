@@ -1,2 +1,1 @@
-devfom.github.io
-================
+Personal blog on [github pages](https://devfom.github.io) powered by beatiful [Harmony theme](https://github.com/gayanvirajith/harmony).

@@ -1,35 +1,62 @@
-# Site settings
-title:       Васины записки
-email:       vasili.fomin@gmail.com
-author:      Vasiliy Fomin
-description: "Персональные записки Фомина Василия Александровича, на околопрограммисткие темы."
-baseurl:     ""
-url:         "http://devfom.github.io"
+# Harmony Jekyll theme general configurations 
 
-# Google analytics
-google_analytics: UA-37444105-1
+# Base URL
+baseurl: 
 
-# Optional features
-animated:           false
-show_related_posts: false
-show_post_footers:  false
+# Site live URL
+url: http://devfom.github.io
 
-# Social icons
-show_social_icons: false
-github_username:
-twitter_username:
-google_plus_id:
-linkedin_username:
-bitcoin_url:
-paypal_url:
-flattr_button:
+# Localhost 
+url: http://127.0.0.1:4000  
 
-# Disqus Comments
-disqus_short_name: devfom
+# Harmony theme configuration. Please change accordingly.
+harmony:
+  name: devfom 
+  # Little description about your site
+  description: My personal blog
+  # 'meta_description:' Write an awesome description for your new site here.
+  # It will appear in your document head meta (for Google search results) and 
+  # in your feed.xml site description.
+  meta_description: > # 
+    Blog about my road in the software engeneering field. C, C++, Python
+  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  author: # Author details
+    name: Vasily Fomin
+    email: vasili.fomin@gmail.com
+    url: http://devfom.github.io
 
-# Build settings
-markdown:     kramdown
-permalink:    pretty
-paginate:     10
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-37444105-1
+
+  # Profile links, leave blank to ignore
+  social: 
+    github: devfom
+    twitter: 
+    facebook: 
+    gplus: 
+    dribble: 
+    pinterest: 
+  # Toggle disclaimer in footer
+  show_disclaimer: false
+
+# Conversion / Build settings 
+markdown:    kramdown
+# This is how you put pygments config in jekyll 2.0 instead of pygments: true
+highlighter: pygments 
+
+# Permalinks
+permalink:        pretty
+
+exclude: 
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
 sass:
-  compressed: true
+    sass_dir: assets/css/_sass
+    style: :compressed
