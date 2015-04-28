@@ -37,16 +37,13 @@
                 <div class="column two">
                     {% include social.html %}
                 </div>
-            </div>
-            <p class="wc-container disclaimer">
-                {% include footer.html %}
-            </p>
+            </div>           
         </footer>
         <script type="text/javascript">
           /* To avoid render blocking css */
           var cb = function() {
             var l = document.createElement('link'); l.rel = 'stylesheet';
-            l.href = 'http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin';
+            l.href = 'http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,cyrillic';
             var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
           };
           var raf = requestAnimationFrame || mozRequestAnimationFrame ||

@@ -1,14 +1,14 @@
 ---
 layout: page
-title: About me
+title: Обо мне
 permalink: /about/
 ---
 
-Привет, меня зовут Василий Фомин, и я программист :-)
+TBD
 
 ### Контакты
 
-[Github][github] или просто `Привет` на [vasili.fomin@gmail.com](vasili.fomin@gmail.com).
+[Github][github] или `Привет` на [vasili.fomin@gmail.com](vasili.fomin@gmail.com).
 
 
 [github]: https://github.com/devfom

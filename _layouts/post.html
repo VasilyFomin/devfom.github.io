@@ -21,7 +21,6 @@ layout: default
 		</div>
 	</div>
 
-
 	{% if site.related_posts %}
 	<div class="related">
 		<h4>Related Posts</h2>
@@ -44,7 +43,7 @@ layout: default
 				<span><< Older</span>
 			{% endif %}
 		</div>
-		<div class="column-2"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }} ">Home</a></div>
+		<div class="column-2"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }} ">Домой</a></div>
 		<div class="column-3">
 			{% if page.next %}
 				<a href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}">Newer >></a>
@@ -53,5 +52,9 @@ layout: default
 			{% endif %}
 		</div>
 	</div>
+
+	{% if site.disqus_short_name and page.comments == true %}
+		{% include disqus.html %}
+	{% endif %}
 </div>
  
