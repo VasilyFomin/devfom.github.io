@@ -15,7 +15,7 @@ disqus_short_name: devfom
 
 # Harmony theme configuration. Please change accordingly.
 harmony:
-  name: devfom 
+  name:
   # Little description about your site
   description: Васины записки
   # 'meta_description:' Write an awesome description for your new site here.
