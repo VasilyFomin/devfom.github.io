@@ -1,9 +1,10 @@
 ---
 layout:		post
 comments:	true
-title:		Минимальная ассемблер программа для Linux
-date:		2015-05-02
+title:		"Aссемблер для Linux: минимальная программа"
+date:		2015-05-01
 categories:
+- linux
 - asm
 ---
 
@@ -40,8 +41,6 @@ int $0x80
 Для того чтобы собрать и запустить программу, нужно получить объектный файл, который нужно слинковать, и тем самым получить исполняемый файл:
 
 {% highlight bash %}
-# Устанавливаем необходимые утилиты
-sudo apt-get install build-essential
 # Assemble
 as programm.s -o programm.o
 # Link
