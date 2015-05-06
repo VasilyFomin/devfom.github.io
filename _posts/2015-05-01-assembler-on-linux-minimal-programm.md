@@ -10,7 +10,34 @@ categories:
 
 Когда не знаешь с чего начать - начни с начала.
 
-Программа, которая ничего не делает, и возвращает `0`:
+#### Hello, World, куда же без него
+
+{% highlight asm %}
+.section .data
+message:
+	.ascii "Hello, world!\n"
+	len = . - message
+.section .text
+.globl _start
+_start:
+	# Длина сообщения
+	movl $len, %edx
+	# Сообщение
+	movl $message, %ecx
+	# Куда писать - stdout
+	movl $1, %ebx
+	# Системный вызов - sys_write
+	movl $4, %eax
+	# Будем ядро
+	int $0x80
+
+	# Выход из программы
+	movl $1, %eax
+	movl $0, %ebx
+	int $0x80
+{% endhighlight %}
+
+#### Программа, которая ничего не делает, и возвращает `0`:
 
 {% highlight asm %}
 .section .data
@@ -52,3 +79,5 @@ ld programm.o -o programm
 # Смотрим, какое значение, вернула наша программа
 echo $?
 {% endhighlight %}
+
+
