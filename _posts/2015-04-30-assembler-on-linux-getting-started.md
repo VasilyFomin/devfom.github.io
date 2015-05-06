@@ -29,4 +29,4 @@ as --version
 ld --version
 {% endhighlight %}
 
-[Минимальная программа]({% post_url 2015-05-01-minimal-assembler-programm-on-linux %})
+[Минимальная программа]({% post_url 2015-05-01-assembler-on-linux-minimal-programm %})
