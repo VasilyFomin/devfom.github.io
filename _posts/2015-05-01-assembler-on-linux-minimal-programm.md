@@ -80,4 +80,9 @@ ld programm.o -o programm
 echo $?
 {% endhighlight %}
 
+Но, это не сработает на 64-х битной ОС, поэтому, собираем со следующими ключами:
 
+{% highlight bash %}
+as --32
+ld -m elf_i386
+{% endhighlight %}
